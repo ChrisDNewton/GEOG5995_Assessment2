@@ -10,10 +10,17 @@ The the source data needs to be saved in the same folder as the file '201190819_
 '201190819_A2.py' requires the prior installation of the following libraries, all of which are included within the standard Anaconda framework for Python 3.6 -
 
 os
+
 pandas
+
 numpy
+
 matplotlib.pyplot
+
 scipy.stats
+
 ols from statsmodels.formula.api
+
 seaborn
+
 
