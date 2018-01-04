@@ -77,7 +77,7 @@ http://greenteapress.com/wp/think-stats-2e/
 
 def CleanData(df):
     na_vals = [9, -1, 0.0] #Specify the missing numbers for this set of variables
-    df.deathapp.replace(na_vals, np.nan, inplace=True) #replace missing data in a specific variabel with np.nan (a floating point value that represents non-numerical values)
+    df.deathapp.replace(na_vals, np.nan, inplace=True) #replace missing data in a specific variable with np.nan (a floating point value that represents non-numerical values)
     df.leftrigh.replace(na_vals, np.nan, inplace=True)
     df.libauth.replace(na_vals, np.nan, inplace=True)
     df.MRsnRel.replace(na_vals, np.nan, inplace=True)
