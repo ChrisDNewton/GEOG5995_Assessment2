@@ -7,7 +7,7 @@ It has not been included in the github repository for licensing reasons, though 
 
 The the source data needs to be saved in the same folder as the file '201190819_A2.py' in order for the program to work. 
 
-'201190819_A2.py' requires the prior installation of the following libraries, all of which are included within the standard Anaconda framework for Python 3.6 -
+'201190819_A2.py' requires the prior installation of the following libraries, all of which are included within the standard Anaconda download for Python 3.6 -
 
 os
 
