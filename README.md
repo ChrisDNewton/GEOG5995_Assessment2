@@ -1,6 +1,6 @@
 # GEOG5995_Assessment2
 
-A repository for code for the 2nd assessment of GEOG5995 Programming for Social Scientists: Core Skills [Python]
+A repository for code for the 2nd assessment for the module *GEOG5995 Programming for Social Scientists: Core Skills [Python]*
 
 This code requires the file 'bsa14_final.tab' as a data source, available here: http://dx.doi.org/10.5255/UKDA-SN-7809-2 
 It has not been included in the github repository for licensing reasons, though the file was submitted within the zip folder for assessment. 
