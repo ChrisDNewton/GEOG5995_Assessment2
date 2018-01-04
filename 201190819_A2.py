@@ -30,8 +30,15 @@ sns.set(style="whitegrid", color_codes=True)
 if not os.path.isdir ('./output'):
 	os.mkdir ('./output')
 
-#read in the data source tab file as a Pandas data frame 
-df = pd.read_table('bsa14_final.tab', low_memory=False)
+#read in the data source tab file as a Pandas data frame. Raise exception if absent. 
+while True:
+    try:
+        df = pd.read_table('bsa14_final.tab', low_memory=False)
+        break
+    except IOError: #If file is absent, alert user
+        print("Data not found. Please ensure bsa14_final.tab is saved in project folder.")
+        print("This can be downloaded from https://discover.ukdataservice.ac.uk/catalogue/?sn=7809")
+        break
 
 """
 =======================================================================================================
