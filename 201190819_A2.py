@@ -128,7 +128,7 @@ plt.figure()
 #Correlation of political stance and attitude towards meat consumption by gender- 
 sns.lmplot(x="leftrigh", y="MeatHab", hue="Rsex", data=df, x_estimator=np.mean);
 plt.title('Attitude towards meat consumption by political stance/sex')
-plt.savefig('./output/meat consumption by political stance and sex') #having a '/' in the title causes error
+plt.savefig('./output/meat consumption by political stance and gender') 
 plt.figure()
 
 #print regression model details
@@ -144,22 +144,22 @@ Libary documentation available at: https://seaborn.pydata.org/tutorial/regressio
 
 #Linear regression: Attitude towards meat consumption by political allingment:
 sns.jointplot(x="leftrigh", y="MeatHab", data=df, kind="reg", stat_func=r2);
-plt.title('Attitude towards meat consumption by political allingment')
+plt.title('Attitude towards meat consumption by political allignment')
 plt.subplots_adjust(hspace=0.4) #adjust axis to avoid title overlap
-plt.savefig('Pearsons Plot', fontsize=20)
+plt.savefig('./output/Pearsons Plot of MeatHab by leftrigh', fontsize=20)
 plt.figure()
 
 #Linear regression: Attitude towards meat consumption by libertarianism:
 sns.jointplot(x="libauth", y="MeatHab", data=df, kind="reg", stat_func=r2);
 plt.title('Attitude towards meat consumption by libertarianism')
 plt.subplots_adjust(hspace=0.4) #adjust axis to avoid title overlap
-plt.savefig('./output/Pearsons Plot libauth', fontsize=20)
+plt.savefig('./output/Pearsons Plot of Meathab by libauth', fontsize=20)
 plt.figure()
 
 #Bar chart of attitude towards meat consumption by gender
 sns.countplot(x='MeatHab', hue='Rsex', data=df)
 plt.title('Attitude towards meat consumption by sex')
-plt.savefig('./output/Attitude towards meat consumption by sex')
+plt.savefig('./output/Attitude towards meat consumption by gender')
 plt.figure()
 
 """
@@ -183,7 +183,7 @@ https://seaborn.pydata.org/examples/logistic_regression.html
 #age and reduced meat intake for health reasons
 sns.lmplot(x="Rage", y="MRsnHlth", hue="Rsex", data=df, y_jitter=.01, logistic=True);
 plt.title('Probability of reduced meat consumption for health reasons by age')
-plt.savefig('./output/Logistic Regression') #having a '/' in the title causes error
+plt.savefig('./output/Log regression of reduced meat for health reasons') #having a '/' in the title causes error
 plt.figure()
 
 #Bar chart of gender split
@@ -194,7 +194,7 @@ plt.figure()
 #age and reduced meat intake for environnmental reasons
 sns.lmplot(x="Rage", y="MRsnEnvt", hue="Rsex", data=df, y_jitter=.01, logistic=True);
 plt.title('Probability of reduced meat consumption for environmental reasons by age')
-plt.savefig('./output/Log Reg Env') 
+plt.savefig('./output/Log regression of reduced meat for env reasons') 
 plt.figure()
 
 #Bar chart of gender split
@@ -207,7 +207,7 @@ plt.figure()
 #age and reduced meat intake for animal welfare reasons
 sns.lmplot(x="Rage", y="MRsnAnml", hue="Rsex", data=df, y_jitter=.01, logistic=True);
 plt.title('Probability of reduced meat consumption for animal welfare reasons by age')
-plt.savefig('./output/Logistic Regression Welfare') #having a '/' in the title causes error
+plt.savefig('./output/Log regression of reduced meat for welfare reasons') #having a '/' in the title causes error
 plt.figure()
 
 #Bar chart of gender split
