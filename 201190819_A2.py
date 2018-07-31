@@ -51,7 +51,7 @@ https://stackoverflow.com/questions/24037507/converting-string-objects-to-int-fl
 df['leftrigh'] = pd.to_numeric(df['leftrigh'], errors='coerce')
 
 #Convert libauth from str object to numeric 
-df['libauth'] = pd.to_numeric(df['leftrigh'], errors='coerce')
+df['libauth'] = pd.to_numeric(df['libauth'], errors='coerce')
 
 #Convert MeatEnv from str object to numeric 
 df['MeatEnv'] = pd.to_numeric(df['leftrigh'], errors='coerce')
