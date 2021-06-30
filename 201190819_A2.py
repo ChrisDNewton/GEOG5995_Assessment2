@@ -54,7 +54,7 @@ df['leftrigh'] = pd.to_numeric(df['leftrigh'], errors='coerce')
 df['libauth'] = pd.to_numeric(df['libauth'], errors='coerce')
 
 #Convert MeatEnv from str object to numeric 
-df['MeatEnv'] = pd.to_numeric(df['leftrigh'], errors='coerce')
+df['MeatEnv'] = pd.to_numeric(df['MeatEnv'], errors='coerce')
 
 
 """
